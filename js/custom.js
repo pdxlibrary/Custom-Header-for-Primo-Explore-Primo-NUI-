@@ -49,8 +49,7 @@ function add_custom_header(header_container)
 	var header_container = angular.element(document.getElementsByClassName('custom-header'));
 	if(header_container.length == 0)
 	{
-		
-		var custom_header_html = '<div class="custom-header" style="height:240px;">'+custom_header_template+'</div>'
+		var custom_header_html = '<div class="custom-header">'+custom_header_template+'</div>'
 		var prm_explore_main = angular.element(document.querySelector('prm-explore-main'));
 		if(prm_explore_main.length == 1)
 		{
