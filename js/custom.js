@@ -6,43 +6,23 @@ var custom_header_template = "<div>CUSTOM HEADER GOES HERE</div>";
 
     var app = angular.module('viewCustom', ['angularLoad']);
 	
-	
-	// load jquery - needed for custom header ubermenu
 	app.component('prmTopBarBefore', {
 		bindings: {parentCtrl: '<'},
 		controller: function () {
 			this.$onInit = function () {
-				var header_container = angular.element(document.getElementsByClassName('custom-header'));
-				if(header_container.length > 0)
-					console.log(" ### header exists when prmTopBarBefore controller initialized");
-				else
-					add_custom_header(header_container);
+				angular.element(document).ready(function(){
+					var header_container = angular.element(document.getElementsByClassName('custom-header'));
+					if(header_container.length > 0)
+						console.log(" ### header exists when prmTopBarBefore controller initialized");
+					else
+						add_custom_header(header_container);
+				});
 			};
 		},
 		template: ''
 	});
-
-	// debug info for custom header
-	app.run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
-	  $rootScope.$on('$locationChangeSuccess', function(event){
-			console.log(" @@@ page: " + $location.url());
-			var header_container = angular.element(document.getElementsByClassName('custom-header'));
-			if(header_container.length > 0)
-				console.log(" @@@ header exists when locationChangeSuccess triggered");
-			console.log(" @@@ path name: " + window.location.pathname);
-	  });
-	}]);
 	
 })();
-
-angular.element(document).ready(function(){
-	var header_container = angular.element(document.getElementsByClassName('custom-header'));
-	if(header_container.length > 0)
-		console.log(" ### header exists when jquery loaded");
-	else
-		add_custom_header(header_container);
-	console.log(" ### path name: " + window.location.pathname);
-})
 
 function add_custom_header(header_container)
 {
@@ -72,6 +52,3 @@ function add_custom_header(header_container)
 		console.log("ERROR: path name: " + window.location.pathname);
 	}
 }
-
-
-
