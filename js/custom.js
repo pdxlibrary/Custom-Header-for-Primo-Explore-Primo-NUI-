@@ -36,7 +36,7 @@ function add_custom_header(header_container)
 			angular.element(header_container).after(prm_explore_main);
 		}
 		
-		// move custom header to top of record page
+		// move custom header to top of full record page
 		var prm_full_view_page = angular.element(document.querySelector('prm-full-view-page'));
 		if(prm_full_view_page.length == 1)
 		{
