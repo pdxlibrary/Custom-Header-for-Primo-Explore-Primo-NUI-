@@ -18,11 +18,11 @@ var custom_header_template = "<div>CUSTOM HEADER GOES HERE</div>";
 
 ### custom1.css
 
-The necessary code can be copied from the custom1.css file in the css folder of this repository. The current design of Primo makes some assumptions about the design at the top of the page and uses absolution positioning for some elements. After adding a custom header, some adjustments need to be made to work around these assumptions.
+The necessary code can be copied from the custom1.css file in the css folder of this repository. The current design of Primo makes some assumptions about the design at the top of the page and uses absolution positioning for some elements. After adding a custom header, some adjustments can be made to work around these assumptions.
 
 ```css
 
-/* header */
+/* custom header container */
 .custom-header {}
 
 
