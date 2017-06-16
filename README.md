@@ -4,7 +4,7 @@ This repository includes the JS and CSS need to add a custom header to the top o
 
 ## Installation
 
-To add a custom header to Primo, you will need to update the custom.js and custom1.css files for the UI theme for a particular view in the Primo Back Office (PBO).
+To add a custom header to Primo, you will need to update the custom.js and custom1.css files of the UI theme for a particular view in the Primo Back Office (PBO).
 
 ### custom.js
 
