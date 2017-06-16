@@ -1,0 +1,21 @@
+/* header */
+.custom-header {}
+
+
+/* turn off fly to fav pin animation */
+.pinDummy.animating{animation:none !important;}
+/* full setup for animation in case further customization is desired - from: http://alliance-primo-sb.hosted.exlibrisgroup.com/primo-explore/lib/app-e9216f9008.css */
+/*
+.pinDummy{position:absolute;z-index:1000;transition:all .3s cubic-bezier(.55,0,.55,.2);transition-duration:.5s;background-color:transparent;border-radius:50%;width:38px;height:38px;padding:.5em;opacity:0;overflow:hidden}
+.pinDummy:before{background-color:tomato;opacity:0;z-index:0;transition:opacity .3s linear .3s}
+.pinDummy:after,.pinDummy:before{content:"";position:absolute;width:100%;height:100%;top:0;left:0}
+.pinDummy:after{background-color:#fff;opacity:1;z-index:-1;transition:opacity .2s linear .5s}
+.pinDummy prm-icon{color:#45aab4;transition:color .4s linear .1s}
+.pinDummy md-icon{transform:rotate(20deg)}
+.pinDummy.animating{animation:flyToFav 1s cubic-bezier(.25,.8,.25,1) forwards}
+.pinDummy.animating prm-icon{color:#fff}
+.pinDummy.animating md-icon{transition:transform .7s cubic-bezier(.55,0,.55,.2);transform:rotate(-415deg)}
+.pinDummy.animating:before{opacity:1}
+.pinDummy.animating:after{opacity:0}
+@keyframes flyToFav{0%{opacity:0;transform:scale3d(.85,.85,1);box-shadow:0 0 0 0 transparent}5%{opacity:1}50%{transform:scaleX(1);box-shadow:0 15px 12px -6px rgba(0,0,0,.15);transition:all .4s cubic-bezier(.25,.8,.25,1)}70%{opacity:1}80%{opacity:0}}
+*/
