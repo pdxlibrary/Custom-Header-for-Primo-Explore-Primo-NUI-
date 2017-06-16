@@ -1,10 +1,10 @@
 var custom_header_template = "<div>CUSTOM HEADER GOES HERE</div>";
 
 (function () {
-    "use strict";
-    'use strict';
+	"use strict";
+	'use strict';
 
-    var app = angular.module('viewCustom', ['angularLoad']);
+	var app = angular.module('viewCustom', ['angularLoad']);
 	
 	app.component('prmTopBarBefore', {
 		bindings: {parentCtrl: '<'},
